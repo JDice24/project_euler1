@@ -20,12 +20,15 @@ describe 'euler1' do
     expect(is_multiple_of_five?(2)).to be false
   end
 
-  it 'should be able to extract multiples of 3 from a list of numbers' do
+  it 'should be able to select multiples of 3 from a list of numbers' do
     expect(multiples_of_three(numbers)).to eq [3, 6, 9]
   end
 
-  it 'should be able to extract multiples of 5 from a list of numbers' do
+  it 'should be able to delect multiples of 5 from a list of numbers' do
     expect(multiples_of_five(numbers)).to eq [5, 10]
   end
 
+  it 'should be able to select multiples of 3 and 5 from a list of numbers' do
+    expect(multiples_of_three_and_five(numbers)).to eq [3, 5, 6, 9, 10]
+  end
 end
