@@ -15,7 +15,7 @@ def multiples_of_five(numbers)
 end
 
 def multiples_of_three_and_five(numbers)
-  [multiples_of_three(numbers), multiples_of_five(numbers)].flatten.sort
+  [multiples_of_three(numbers), multiples_of_five(numbers)].flatten.sort.uniq
 end
 
 def sum(numbers)
