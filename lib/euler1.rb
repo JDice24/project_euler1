@@ -21,3 +21,8 @@ end
 def sum(numbers)
   numbers.inject { |sum, number| sum + number }
 end
+
+def sum_multiples_of_three_and_five(up_to_number)
+  numbers = (1...up_to_number).to_a
+  sum(multiples_of_three_and_five(numbers))
+end
