@@ -25,7 +25,7 @@ describe 'euler1' do
   end
 
   it 'should be able to extract multiples of 5 from a list of numbers' do
-    expect(multiples_of_five(numbers)).to eq [5]
+    expect(multiples_of_five(numbers)).to eq [5, 10]
   end
 
 end

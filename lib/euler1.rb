@@ -10,3 +10,6 @@ def multiples_of_three(numbers)
   numbers.select { |number| is_multiple_of_three?(number) }
 end
 
+def multiples_of_five(numbers)
+  numbers.select { |number| is_multiple_of_five?(number) }
+end
