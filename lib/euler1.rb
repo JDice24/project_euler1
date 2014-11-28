@@ -26,3 +26,6 @@ def sum_multiples_of_three_and_five(up_to_number)
   numbers = (1...up_to_number).to_a
   sum(multiples_of_three_and_five(numbers))
 end
+
+puts sum_multiples_of_three_and_five(10)
+puts sum_multiples_of_three_and_five(1000)
