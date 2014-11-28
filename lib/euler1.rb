@@ -17,3 +17,7 @@ end
 def multiples_of_three_and_five(numbers)
   [multiples_of_three(numbers), multiples_of_five(numbers)].flatten.sort
 end
+
+def sum(numbers)
+  numbers.inject { |sum, number| sum + number }
+end
