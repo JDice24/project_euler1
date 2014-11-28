@@ -2,6 +2,8 @@ require 'euler1'
 
 describe 'euler1' do
 
+  let (:numbers) { (1..10).to_a }
+
   it 'should know that 3 is a multiple of 3' do
     expect(is_multiple_of_three?(3)).to be true
   end
@@ -19,8 +21,11 @@ describe 'euler1' do
   end
 
   it 'should be able to extract multiples of 3 from a list of numbers' do
-    numbers = (1..10).to_a
     expect(multiples_of_three(numbers)).to eq [3, 6, 9]
+  end
+
+  it 'should be able to extract multiples of 5 from a list of numbers' do
+    expect(multiples_of_five(numbers)).to eq [5]
   end
 
 end
