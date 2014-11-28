@@ -13,3 +13,7 @@ end
 def multiples_of_five(numbers)
   numbers.select { |number| is_multiple_of_five?(number) }
 end
+
+def multiples_of_three_and_five(numbers)
+  [multiples_of_three(numbers), multiples_of_five(numbers)].flatten.sort
+end
